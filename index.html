@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OrTech Insights</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#10243F; --brass:#B07F2E; --slate:#3F5D52;
+  --ivory:#F6F3EC; --ink:#2A3340; --muted:#6C7480; --hair:#E3DCCB;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html,body{height:100%;}
+body{
+  background:var(--ivory); color:var(--ink);
+  font-family:'Lato',-apple-system,BlinkMacSystemFont,sans-serif;
+  -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+}
+.page{min-height:100vh; display:flex; flex-direction:column; padding:46px 8vw 40px; position:relative; overflow:hidden;}
+/* faint node motif, top-right, for air */
+.motif{position:absolute; top:-40px; right:-30px; width:340px; height:300px; opacity:.16; pointer-events:none;}
+header{display:flex; align-items:center; gap:13px; z-index:2;}
+.mark{width:30px;height:22px;}
+.wordmark{font-weight:900; letter-spacing:3px; font-size:15px; color:var(--navy);}
+main{flex:1; display:flex; flex-direction:column; justify-content:center; max-width:780px; z-index:2;}
+.eyebrow{color:var(--brass); font-weight:900; letter-spacing:3.5px; font-size:12.5px; text-transform:uppercase; margin-bottom:30px;}
+h1{font-weight:900; font-size:clamp(40px,6.2vw,74px); line-height:1.01; letter-spacing:-.5px; color:var(--navy); margin-bottom:30px;}
+.lede{font-size:clamp(17px,1.9vw,21px); line-height:1.55; color:var(--ink); max-width:600px; margin-bottom:52px; font-weight:400;}
+.contact{font-size:13px;}
+.contact .label{display:block; text-transform:uppercase; letter-spacing:2.5px; font-weight:700; font-size:11px; color:var(--muted); margin-bottom:9px;}
+.contact a{color:var(--brass); text-decoration:none; font-weight:700; font-size:20px; border-bottom:1px solid rgba(176,127,46,.3); padding-bottom:3px; transition:border-color .2s;}
+.contact a:hover{border-color:var(--brass);}
+footer{z-index:2; color:var(--muted); font-size:11.5px; letter-spacing:.4px; border-top:1px solid var(--hair); padding-top:18px; margin-top:40px;}
+</style>
+</head>
+<body>
+<div class="page">
+  <svg class="motif" viewBox="0 0 340 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g stroke="#B07F2E" stroke-width="1.4">
+      <line x1="60" y1="120" x2="150" y2="60"/><line x1="150" y1="60" x2="245" y2="95"/>
+      <line x1="245" y1="95" x2="300" y2="190"/><line x1="150" y1="60" x2="170" y2="170"/>
+      <line x1="60" y1="120" x2="170" y2="170"/><line x1="170" y1="170" x2="300" y2="190"/>
+    </g>
+    <g fill="#B07F2E">
+      <circle cx="60" cy="120" r="7"/><circle cx="150" cy="60" r="9"/><circle cx="245" cy="95" r="7"/>
+      <circle cx="170" cy="170" r="6"/><circle cx="300" cy="190" r="8"/>
+    </g>
+  </svg>
+
+  <header>
+    <svg class="mark" viewBox="0 0 30 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <line x1="3" y1="14" x2="13" y2="4" stroke="#B07F2E" stroke-width="1.6"/>
+      <line x1="13" y1="4" x2="24" y2="13" stroke="#B07F2E" stroke-width="1.6"/>
+      <circle cx="3" cy="14" r="3" fill="#B07F2E"/><circle cx="13" cy="4" r="3.4" fill="#B07F2E"/><circle cx="24" cy="13" r="3" fill="#B07F2E"/>
+    </svg>
+    <span class="wordmark">ORTECH INSIGHTS</span>
+  </header>
+
+  <main>
+    <div class="eyebrow">Private markets decision intelligence</div>
+    <h1>AI decision systems<br>for private markets</h1>
+    <p class="lede">We help private equity firms and portfolio companies turn fragmented data into repeatable decision systems &mdash; for diligence, monitoring, and growth.</p>
+    <div class="contact">
+      <span class="label">Get in touch</span>
+      <a href="mailto:david@ortech.ai">david@ortech.ai</a>
+    </div>
+  </main>
+
+  <footer>&copy; 2026 OrTech Insights Ltd.</footer>
+</div>
+</body>
+</html>

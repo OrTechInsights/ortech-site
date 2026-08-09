@@ -30,8 +30,17 @@ h1{font-weight:900; font-size:clamp(40px,5.8vw,70px); line-height:1.01; letter-s
 .lede{font-size:clamp(17px,1.9vw,21px); line-height:1.55; color:var(--ink); max-width:600px; margin-bottom:24px; font-weight:400;}
 .proof{font-size:clamp(15px,1.5vw,17px); font-weight:700; color:var(--slate); margin-bottom:20px;}
 .proof b{color:var(--brass); font-weight:700;}
-.flow{font-size:12px; letter-spacing:2px; text-transform:uppercase; color:var(--muted); font-weight:700; margin-bottom:46px;}
+.flow{font-size:12px; letter-spacing:2px; text-transform:uppercase; color:var(--muted); font-weight:700; margin-bottom:38px;}
 .flow i{color:var(--brass); font-style:normal; margin:0 5px;}
+/* Two funnel doorways */
+.ctas{display:flex; flex-wrap:wrap; gap:14px; margin-bottom:44px;}
+.btn{display:inline-flex; align-items:center; gap:9px; font-weight:900; letter-spacing:1.6px; text-transform:uppercase; font-size:12.5px; text-decoration:none; padding:16px 27px; border-radius:2px; transition:transform .15s ease, background .2s, border-color .2s, color .2s;}
+.btn:hover{transform:translateY(-1px);}
+.btn .arr{font-style:normal;}
+.btn-primary{background:var(--brass); color:var(--ivory);}
+.btn-primary:hover{background:#9A6D24;}
+.btn-ghost{background:transparent; color:var(--navy); border:1.5px solid var(--hair);}
+.btn-ghost:hover{border-color:var(--brass); color:var(--brass);}
 .contact{font-size:13px;}
 .contact .label{display:block; text-transform:uppercase; letter-spacing:2.5px; font-weight:700; font-size:11px; color:var(--muted); margin-bottom:9px;}
 .contact a{color:var(--brass); text-decoration:none; font-weight:700; font-size:20px; border-bottom:1px solid rgba(176,127,46,.3); padding-bottom:3px; transition:border-color .2s;}
@@ -46,7 +55,9 @@ footer{z-index:2; color:var(--muted); font-size:11.5px; letter-spacing:.4px; bor
   .eyebrow{font-size:11px; letter-spacing:2.2px; margin-bottom:22px;}
   h1{font-size:38px; line-height:1.08; margin-bottom:24px;}
   .lede{font-size:17px; line-height:1.5; margin-bottom:24px;}
-  .flow{font-size:11px; letter-spacing:1.2px; line-height:1.7; margin-bottom:38px;}
+  .flow{font-size:11px; letter-spacing:1.2px; line-height:1.7; margin-bottom:30px;}
+  .ctas{gap:11px; margin-bottom:36px;}
+  .btn{padding:14px 22px; font-size:11.5px; letter-spacing:1.2px;}
   footer{margin-top:36px;}
 }
 </style>
@@ -80,6 +91,10 @@ footer{z-index:2; color:var(--muted); font-size:11.5px; letter-spacing:.4px; bor
     <p class="lede">We help private equity firms and portfolio companies turn fragmented internal and external data into repeatable decision systems &mdash; improving diligence, portfolio monitoring, and revenue growth.</p>
     <p class="proof">Private-markets judgment <b>+</b> production ML discipline.</p>
     <div class="flow">Decision <i>&rarr;</i> Data <i>&rarr;</i> Model <i>&rarr;</i> Output <i>&rarr;</i> Adoption</div>
+    <div class="ctas">
+      <a class="btn btn-primary" href="https://nevo-dashboard-v2.vercel.app/portal">Enter Nevo <span class="arr">&rarr;</span></a>
+      <a class="btn btn-ghost" href="https://nevo-dashboard-v2.vercel.app/tape?from=ortech">Get The Nevo Tape <span class="arr">&rarr;</span></a>
+    </div>
     <div class="contact">
       <span class="label">Start with one decision</span>
       <a href="mailto:david@ortech.ai">david@ortech.ai</a>

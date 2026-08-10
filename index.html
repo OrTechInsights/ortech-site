@@ -24,7 +24,7 @@ body{
 header{display:flex; align-items:center; gap:13px; z-index:2;}
 .mark{width:30px;height:22px;}
 .wordmark{font-weight:900; letter-spacing:3px; font-size:15px; color:var(--navy);}
-main{flex:1; display:flex; flex-direction:column; justify-content:center; max-width:780px; z-index:2;}
+main{flex:1; display:flex; flex-direction:column; justify-content:flex-start; max-width:780px; z-index:2;}
 .eyebrow{color:var(--brass); font-weight:900; letter-spacing:3.5px; font-size:12.5px; text-transform:uppercase; margin-bottom:30px;}
 h1{font-weight:900; font-size:clamp(40px,5.8vw,70px); line-height:1.01; letter-spacing:-.5px; color:var(--navy); margin-bottom:30px;}
 .lede{font-size:clamp(17px,1.9vw,21px); line-height:1.55; color:var(--ink); max-width:600px; margin-bottom:24px; font-weight:400;}
@@ -33,7 +33,10 @@ h1{font-weight:900; font-size:clamp(40px,5.8vw,70px); line-height:1.01; letter-s
 .flow{font-size:12px; letter-spacing:2px; text-transform:uppercase; color:var(--muted); font-weight:700; margin-bottom:38px;}
 .flow i{color:var(--brass); font-style:normal; margin:0 5px;}
 /* Two funnel doorways */
-.ctas{display:flex; flex-wrap:wrap; gap:14px; margin-bottom:44px;}
+.ctas{display:flex; flex-wrap:wrap; gap:14px; margin-bottom:18px;}
+.signin{font-size:13.5px; margin-bottom:44px;}
+.signin a{color:var(--muted); text-decoration:none; font-weight:700;}
+.signin a:hover{color:var(--brass);}
 .btn{display:inline-flex; align-items:center; gap:9px; font-weight:900; letter-spacing:1.6px; text-transform:uppercase; font-size:12.5px; text-decoration:none; padding:16px 27px; border-radius:2px; transition:transform .15s ease, background .2s, border-color .2s, color .2s;}
 .btn:hover{transform:translateY(-1px);}
 .btn .arr{font-style:normal;}
@@ -51,7 +54,6 @@ footer{z-index:2; color:var(--muted); font-size:11.5px; letter-spacing:.4px; bor
   .motif{display:none;}
   header{margin-bottom:48px;}
   .wordmark{font-size:13px; letter-spacing:2.4px;}
-  main{justify-content:flex-start;}
   .eyebrow{font-size:11px; letter-spacing:2.2px; margin-bottom:22px;}
   h1{font-size:38px; line-height:1.08; margin-bottom:24px;}
   .lede{font-size:17px; line-height:1.5; margin-bottom:24px;}
@@ -86,10 +88,13 @@ footer{z-index:2; color:var(--muted); font-size:11.5px; letter-spacing:.4px; bor
   </header>
 
   <main>
+    <div class="eyebrow">Private markets decision intelligence</div>
+    <h1>Nevo beta testing<br>is underway</h1>
     <div class="ctas">
       <a class="btn btn-primary" href="https://nevo-dashboard-v2.vercel.app/tape?from=ortech">Get The Nevo Tape <span class="arr">&rarr;</span></a>
       <a class="btn btn-ghost" href="mailto:david@ortech.ai?subject=Requesting%20access%20to%20Nevo">By invitation only - request access <span class="arr">&rarr;</span></a>
     </div>
+    <div class="signin"><a href="https://nevo-dashboard-v2.vercel.app/portal">Already a member? Enter your key &rarr;</a></div>
   </main>
 
   <footer>&copy; 2026 OrTech Insights Ltd.</footer>
